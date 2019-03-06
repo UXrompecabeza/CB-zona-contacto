@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Cruzblanca - Zona de contacto</title>
+  </head>
+  <body>
+    <main><img class="header hide-sm" src="./assets/img/header.png"><img class="header hide-md hide-lg" src="./assets/img/header-mobile.png">
+      <div class="containerCB">
+        <div class="breadcrumbs">
+          <h6>Inicio / <span>Contacto</span></h6>
+        </div>
+        <div class="zonaContacto">
+          <h1>Bienvenido a nuestra zona de contacto</h1>
+          <div class="btnsContainer">
+            <h4>Selecciona una de las opciones</h4>
+            <div class="btnsContacto">
+              <label class="containerRadio selected" id="noCliente">
+                <div class="tipBtn">
+                  <input type="radio" name="contacto" checked="checked" id="inputNoCliente"><span class="checkmark"></span>
+                </div>
+                <div class="topBtn">No soy cliente</div>
+              </label>
+              <label class="containerRadio" id="cliente">
+                <div class="tipBtn">
+                  <input type="radio" name="contacto" id="inputCliente"><span class="checkmark"></span>
+                </div>
+                <div class="topBtn">Soy cliente</div>
+              </label>
+              <label class="containerRadio" id="prestador">
+                <div class="tipBtn">
+                  <input type="radio" name="contacto" id="inputPrestador"><span class="checkmark"></span>
+                </div>
+                <div class="topBtn">Soy prestador</div>
+              </label>
+              <label class="containerRadio" id="empresa">
+                <div class="tipBtn">
+                  <input type="radio" name="contacto" id="inputEmpresa"><span class="checkmark"></span>
+                </div>
+                <div class="topBtn">Soy empresa</div>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="actionContainer">
+        <div class="iconsContainer hide-md hide-lg">
+          <div class="iconografia noCliente show"><img src="./assets/icons/person.svg">
+            <h5>No soy cliente</h5>
+          </div>
+          <div class="iconografia cliente"><img src="./assets/icons/person.svg">
+            <h5>Soy cliente</h5>
+          </div>
+          <div class="iconografia prestador"><img src="./assets/icons/person.svg">
+            <h5>Soy prestador</h5>
+          </div>
+          <div class="iconografia empresa"><img src="./assets/icons/person.svg">
+            <h5>Soy empresa</h5>
+          </div>
+        </div>
+        <div class="contactoContainer noCliente show">
+          <h4>Selecciona un motivo</h4>
+          <div class="container-btns_interiores">
+            <div class="btn-interior"> 
+              <div class="btn-interior_tip"><img src="./assets/icons/planes.svg"></div>
+              <h6>Cotizar planes</h6>
+            </div>
+            <div class="btn-interior"> 
+              <div class="btn-interior_tip"><img src="./assets/icons/sugerencias.svg"></div>
+              <h6>Sugerencias</h6>
+            </div>
+            <div class="btn-interior"> 
+              <div class="btn-interior_tip"><img src="./assets/icons/felicitaciones.svg"></div>
+              <h6>Felicitaciones</h6>
+            </div>
+            <div class="btn-interior"> 
+              <div class="btn-interior_tip"><img src="./assets/icons/consultas.svg"></div>
+              <h6>Consultas ex-clientes</h6>
+            </div>
+            <div class="btn-interior" data-toggle="modal" data-target="#estadoReclamo">
+              <div class="btn-interior_tip"><img src="./assets/icons/reclamo.svg"></div>
+              <h6>Estado de reclamo</h6>
+            </div>
+            <div class="btn-interior"> 
+              <div class="btn-interior_tip"><img src="./assets/icons/preguntas.svg"></div>
+              <h6>Preguntas frecuentes</h6>
+            </div>
+          </div>
+        </div>
+        <div class="contactoContainer cliente">
+          <div class="inicioSesion">
+            <h2>Para entregarte una mejor atención, por favor ingresa a tu Sucursal Virtual <span>Mi CruzBlanca</span> con tu rut y contraseña</h2>
+            <button>Ir a Mi CruzBlanca</button>
+            <h6>¿No recuerdas tu contraseña?</h6><a>Crear o recuperar contraseña</a>
+          </div>
+        </div>
+        <div class="contactoContainer prestador"></div>
+        <div class="contactoContainer empresa"></div>
+        <div class="modal modalEstadoReclamo fade" id="estadoReclamo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <div class="modal-body">
+                <h5>Estado de reclamo</h5>
+                <h6>Para conocer el estado de un reclamo, por favor llámanos al</h6>
+                <h4> <img src="./assets/icons/telefono.svg">600 818 0000</h4>
+                <h6>Debes ingresar el número de reclamo</h6><a href="https://www.google.cl/maps/search/cruzBlanca/@-33.4182765,-70.6063023,13z/data=!3m1!4b1?hl=es-419&amp;authuser=0" target="_blank"><img src="./assets/icons/ubicacion.svg">Ver sucursales cercanas a mí</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><img class="footer hide-sm" src="./assets/img/footer.png"><img class="footer hide-md hide-lg" src="./assets/img/footer-mobile.png">
+    </main>
+    <script src="js/libs/jQuery.min.js"></script>
+    <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/funciones.js"></script>
+  </body>
+</html>
